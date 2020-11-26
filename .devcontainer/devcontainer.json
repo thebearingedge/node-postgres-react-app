@@ -1,0 +1,18 @@
+{
+  "dockerFile": "Dockerfile",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "remoteUser": "dev",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/dev/node-postgres-react-app,type=bind,consistency=delegated",
+  "workspaceFolder": "/home/dev/node-postgres-react-app",
+  "containerEnv": {
+    "DEBIAN_FRONTEND": "noninteractive"
+  },
+  "mounts": [
+    "source=node-postgres-react-app-home,target=/home/dev,type=volume",
+    "source=node-postgres-react-app-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+    "source=${localWorkspaceFolder}/.git,target=/home/dev/node-postgres-react-app/.git,type=bind,consistency=delegated"
+  ],
+  "postCreateCommand": "sudo chown dev node_modules"
+}

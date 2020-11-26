@@ -1,0 +1,22 @@
+{
+  "name": "node-postgres-react-app",
+  "version": "1.0.0",
+  "description": "Experimenting with VS Code's remote development features.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebearingedge/node-postgres-react-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebearingedge/node-postgres-react-app/issues"
+  },
+  "homepage": "https://github.com/thebearingedge/node-postgres-react-app#readme"
+}
